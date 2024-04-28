@@ -20,35 +20,62 @@
 body{
     color: rgb(0, 0, 0);    
     font-family: Garet;    
+    
 }
 
+.conteiner{
+    background-color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+}
 .laranja{
     background-color: rgb(255, 153, 0);
     width: 100%;
 }
 
-.conteiner{
-    background-color: white;
+.imagens{
+    margin-top: 60px;
     margin-left: 10%;
-    margin-right: 10%;
+    width: auto;   
+    height: auto; 
+    display: flex;
+    margin-bottom: -20px;
 }
+
+.img{
+    border-radius: 50%;
+    width: 60%;
+}
+
+.demo{
+    text-align: center;
+    font-size: 30px;
+}
+
+
 h1{
     font-size: 50px;
 }
+
 h2{
     text-align: center;
     font-size: 80px;
 }
+
 h3{
     text-align: center;
     font-size: 40px;
+}
+h4{    
+    text-align: center;
+    font-size: medium;
 }
 
 p{
     text-align: justify;
     font-size: 25px;
 }
-li{
+.li{
     margin-top: 30px;
     font-size: 30px;
     text-align: justify;
@@ -73,14 +100,13 @@ section{
 .motivacao{
     margin: 40px 40px 40px 80px;
     font-size: 40px;
-    text-align: justify;
-    
+    text-align: justify;    
 }
 .balao{
-    width: 100%;
-    height: 100%;
+    width: 100%;    
     background-color: rgb(255, 153, 0);
     border-radius: 25px;
+    margin-bottom: -100px;
 }
 
 .logo{
@@ -99,8 +125,7 @@ section{
     opacity: 0;
     filter: blur(15px);
     transform: translateX(-100%);
-    transition: all 1s;
-    
+    transition: all 1s;    
 }
 
 .show{
@@ -110,21 +135,42 @@ section{
     transition: all 1s;
 }
 
-.card{
-    width: 900px;
-    height: 400px;
-    background-color: rgb(253, 0, 0);
-    border-radius: 10px;
-    margin: 5px;
-    text-align: center;
+.assinaturas{
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
 }
 
-.logos :nth-child(2){
-    transition-delay: 400ms;
+.card{
+    width: 350px;
+    height: auto;
+    background-color: rgb(253, 0, 0);
+    padding: 10px 0;
+    background: linear-gradient(white, orange);
+    border-radius: 15px;    
+    border: 2px solid black;
 }
-.logos :nth-child(3){
-    transition-delay: 700ms;
+.card:hover{
+    transform: scale(1.050);
 }
-.logos :nth-child(4){
-    transition-delay: 1000ms;
+.card-title{
+    padding: 30px 20px;
+    border-bottom: 2px solid gray ;
+}
+
+.cardcontent{
+    font-size: 10px;
+}
+li{
+    margin-left: 35px;
+    margin-top: 10px;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+footer{
+    margin-top: 10px;
+    position: absolute;
+    background-color: orange;
+    width: 100%;
+    text-align: center;
 }
